@@ -1,0 +1,75 @@
+@media(max-width : 780px){
+    #form-wrapper {
+       margin : 15px 0px;
+    }
+    footer .row .flexy-cen {
+        justify-content: flex-start;
+    }
+    footer {
+        color : white;
+        font-weight: 500;
+        font-size: 120%;
+    }
+    footer h5 {
+        font-size: 32px !important;
+        margin: 15px 0px !important;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    h3 {
+        text-align: left !important;
+    }
+    .abt-cards {
+        padding : 4% 0px;
+    }
+    .abt-cards .card {
+        margin : 8px;
+    }
+    .staff {
+        width : 300px;
+    }
+    .staff img {
+        height: auto !important;
+        width: 100%;
+    }
+    #about-carousel aside {
+        max-width: 100%;
+        text-align: center;
+    }
+    header nav {
+        flex-direction: column;
+    }
+    header nav ul {
+        min-width: 780px!important;
+        margin-top : 10px;
+    }
+    #why-choose div div {
+        display :flex;
+        justify-content: center;
+        text-align: center;
+    }
+    #why-choose div div img {
+        width :300px;
+        border-bottom: 5px solid goldenrod;
+        border-radius: 15px;
+    }
+    #why-choose h2 {
+        text-align: center !important;
+        font-size: 42px;
+        margin: 15px auto;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    #why-choose a {
+        margin :  5px auto;
+    }
+    #recent-events .circle {
+        padding-bottom: 3%;
+        border-bottom: 8px  solid goldenrod;
+    }
+    #announcement .flexy-col {
+        text-align: center !important;
+        align-items: center;
+    }
+    #announcement {
+        padding : 3%  0px;
+    }
+}

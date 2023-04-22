@@ -1,0 +1,79 @@
+<Container>
+<Row>
+    <Col lg={6} md={6}>
+    
+    </Col>
+    <Col lg={6} md={6}>
+    
+    </Col>
+</Row>
+</Container>
+
+
+<Container>
+<Row>
+    <Col lg={4} md={4}>
+    
+    </Col>
+    <Col lg={4} md={4}>
+    
+    </Col>
+    <Col lg={4} md={4}>
+    
+    </Col>
+</Row>
+</Container>
+
+
+<Container>
+<Row>
+    <Col lg={3} md={3} xm={6}>
+          
+    </Col>
+    <Col lg={3} md={3} xm={6}>
+    
+    </Col>
+    <Col lg={3} md={3} xm={6}>
+    
+    </Col>
+    <Col lg={3} md={3} xm={6}>
+    
+    </Col>
+</Row>
+</Container>
+
+
+const Subjects = () => {
+  return (
+    <div>Subjects</div>
+  )
+}
+
+export default Subjects
+
+
+hide Nav / FIXED OR 
+WHEN CURSOR ISON THE BODY / Hides IT
+ // {
+        //   <nav className="navbar navbar-expand-lg bg-body-tertiary center-cen">
+        //   <div className="container-fluid">
+        //     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        //       <img src="logo.jpg" alt="borothamadi-logo" classNameName="navbar-toggler-icon logo"/>
+        //     </button>
+        //     <div className="collapse navbar-collapse" id="navbarNav">
+        //       <ul className="navbar-nav">
+        //         <li><Link to="/">Home</Link></li>    
+        //         <li><Link to="/about">About</Link></li>    
+        //         {/* <li><Link to="/academics">Academics</Link></li>     */}
+        //         <li><Link to="/admissions">Admissions</Link></li>    
+        //         <li><Link to="/learners">Learner</Link></li>    
+        //         <li><Link to="/parents">Parents</Link></li>    
+        //         <li><Link to="/contact">Contact Us</Link></li>  
+        //       </ul>
+        //     </div>
+        //   </div>
+        // </nav>
+        // }
+
+BEAUTFUL SITEs
+https://www.presdaps.co.za/index.html

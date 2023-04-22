@@ -1,0 +1,737 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@600&family=Oswald:wght@500&family=Playfair+Display:ital,wght@1,500&family=Roboto+Slab&display=swap');
+
+*{
+  margin : 0px;
+  padding : 0px;
+  box-sizing  :border-box;
+}
+.logo {
+  width : 100px;
+}
+.center-cen,
+.center-col {
+  display :flex;
+  justify-content : center;
+  align-items :center;
+}
+
+.flexy-cen,
+.flexy-col {
+  display :flex;
+  justify-content : space-around;
+  align-items :center;
+}
+.center-col, 
+.flexy-col {
+  flex-direction :column;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+button {
+  transition : all 0.5s ease;
+  min-width : 120px;
+  min-height : 35px;
+  border-radius : 8px;
+  cursor : pointer;
+}
+.abt-cards .card {
+  display :flex;
+  flex-direction :column;
+  justify-content : space-around;
+  align-items : center;
+}
+.big-picture {
+  width : 100%;
+  height : 90vh;
+  display :flex;
+  justify-content :center;
+  align-items :center;
+}
+.material-symbols-outlined {
+  color : rgb(209, 209, 19);
+  font-size : 111px;
+}
+
+
+#anouncement {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.649);
+  background: url('../public/assets/other/diploma.png');
+  background-color: #f2c70a4f;
+  background-blend-mode: multiply;
+}
+#anouncement article {
+  width: 530px;
+  height: 300px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 4px 5px 17px 1px rgba(0, 0, 0, 0.498);
+}
+#anouncement article aside {
+  width:100%;
+  height:100%;
+  display :flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/**/
+header {
+  min-height: 12vh;
+  width: 100%;
+  display: flex;
+  background-color: #ebc573;
+  justify-content: center;
+  align-items: center;
+  border-bottom : 1px solid red;
+}
+nav {
+  width : 100%;
+  height: 100%;
+  padding: 1% 0px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 60%;
+  margin-left: 40%;
+}
+/*
+
+*/
+h3 {
+  color: goldenrod;
+  font-family: 'Oswald', sans-serif,'Playfair Display', serif;
+  font-style: italic;
+  text-shadow: 4px 3px 1px black;
+  font-size: 42px !important;
+  margin: 25px 0px !important;
+  font-weight: 900 !important;
+}
+
+h5 {
+  color: rgb(0, 0, 0);
+  font-family: 'Oswald', sans-serif,'Playfair Display', serif;
+  font-style: italic;
+  text-shadow: 1px 1px 3px goldenrod;
+  font-size: 31px !important;
+  margin: 15px 0px 0px 0px !important;
+}
+h4 {
+  color: rgb(0 0 0);
+  font-family: 'Oswald', sans-serif,'Playfair Display', serif;
+  font-style: italic;
+  font-size: 38px !important;
+  margin: 15px 0px 0px 0px !important;
+}
+#funct-modal .close {
+  justify-content: flex-end !important;
+  padding-right: 20px;
+  font-weight: 700;
+  height : 10vh;
+  width : 100%;
+  background-color: #ebc573;
+}
+#funct-modal article {
+  width: 600px;
+  height: 50vh;
+  background-color: black;
+  box-shadow: 5px 13px 15px black;
+  border-bottom: 7px solid goldenrod;
+  border-radius: 0px 0px 12px 12px;
+  justify-content: space-between;
+}
+#funct-modal article h3 {
+  transform: translateY(-81px);
+}
+#funct-modal .close span {
+  cursor:  pointer;
+  color : rgb(228, 10, 10);
+  font-size: 32px;
+  transition : all 0.4s ease-in-out;
+}
+/* ==============================
+ CROUSELS SETTINGS
+============================== */
+.carousel {
+  width: 100%;
+  height: 90vh;
+}
+#home-carousel {
+  width: 100%;
+  height: 90vh;
+}
+#home-carousel aside {
+  position: absolute;
+  top : 50%;
+  left : 50%;
+  transform : translate(-50%,-50%);
+  width : 100%;
+  min-height : 180px;
+  border-radius : 35px;
+}
+#home-carousel h2 {
+  font-size : 4.5rem;
+  text-align :center;
+  color : white;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+}
+#home-carousel .carousel-indicators {
+  transform: translateY(-100px);
+  width: 200px;
+  margin: 10px auto;
+}
+#about-carousel {
+  width: 100%;
+  height: 90vh;
+}
+#about-carousel .carousel-item {
+  width: 100%;
+  height: 90vh;
+}
+#about-carousel aside {
+  position: absolute;
+  top : 50%;
+  left : 50%;
+  transform : translate(-50%,-50%);
+  width : 800px;
+  height : 280px;
+  border-radius : 35px;
+  justify-content: space-around;
+  color :white;
+  font-weight: 700;
+  background-color: rgba(0, 0, 0, 0.673);
+}
+#home-carousel button ,
+#about-carousel aside button {
+  width : 150px;
+  height: 50px;
+  margin : 10px auto; 
+}
+#about-carousel aside h2 {
+  font-size: 3.5rem;
+  font-family: 'Playfair Display', sans-serif;
+}
+.carousel-indicators button {
+  height: 50px !important;
+  width :50px !important;
+  border-radius: 50% !important;
+  margin : 10px !important;
+  background-color: rgb(0, 0, 0) !important;
+  border : 1px solid red !important;
+}
+/* ==============================
+ ABOUT WELCOME SETTINGS
+============================== */
+#why-choose {
+  min-height : 76vh;
+  width : 100%;
+  margin-bottom: 30px;
+}
+#why-choose  .why-choose {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items : flex-start;
+  justify-content: space-between;
+}
+#why-choose  .why-choose ul {
+  height : 300px;
+  text-align : left;
+  font-size : 23px;
+  list-style : none;
+  align-items: flex-start;
+}
+
+
+/* ==============================
+ IMAGES SETTINGS
+============================== */
+#recent-events {
+  min-height: 100vh;
+  width : 100%;
+}
+#recent-events h2 {
+  text-align  : center;
+  margin : 20px 0px;
+  font-size: 52px;
+  font-family: 'fair+Display', serif;
+}
+#recent-events .center-col {
+  height: 420px;
+  justify-content: space-between;
+}
+
+/* ==============================
+ FORM SETTINGS
+============================== */
+#form-wrapper {
+  width : 100%;
+  height : 100vh;
+  background-color : black;
+  color : gold;
+}
+.contact-form {
+  width: 680px;
+  margin: auto;
+  padding: 2% 3%;
+  margin : 0px auto;
+  border : 2px solid #ebc573;
+}
+.contact-form aside {
+  width: 100%;
+  height: 10vh;
+  display :flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin : 7px 0px;
+  border-bottom : 2px solid #ebc573;
+}
+.contact-form .flexy-cen {
+  border : none;
+}
+.contact-form .center-col {
+  margin : 7px 0px;
+  border-bottom : 2px solid #ebc573;
+}
+.contact-form textarea {
+  width: 100%;
+  text-align: left;
+}
+.contact-form .center-cen {
+  width : 100%;
+  border : none;
+  border-bottom : 2px solid #ebc573;
+ }
+
+ #form-wrapper textarea,
+ #form-wrapper input {
+  border : none;
+  background-color : black;
+  margin-bottom: 10px;
+ }
+.contact-form button {
+  margin : 10px auto;
+  width : 120px;
+  background-color : #ebc573;
+}
+
+
+/*============================== */
+.card-title h5 {
+  font-size: 26px !important;
+}
+.circle {
+  width:100%;
+  display :flex;
+  flex-direction : column;
+  height : 380px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* ==============================
+ ANNOUNCEMENT SETTINGS
+============================== */
+#announcement {
+  padding: 12px 0px;
+}
+#announcement h3 {
+  text-align: center;
+  margin : 20px 0px;
+}
+#announcement .row {
+ justify-content : center;
+}
+#announcement .center-col {
+  justify-content: space-around;
+  font-size: 18px;
+  font-style : italic;
+}
+
+#announcement .right,
+#announcement .right h5 {
+  text-align: right !important;
+}
+#announcement .left ,
+#announcement .left h5 {
+  text-align: left !important;
+}
+/* ==============================
+ ACEDMIC MISSION SETTINGS
+============================== */
+#acd-adm-abo figure p {
+  border : 3px solid rgba(0, 0, 0, 0.673);
+  width : 150px;
+  height : 40px;
+  line-height : 30px;
+  text-align: center;
+  border-radius: 6px;
+  margin: 10px auto;
+  text-decoration: none;
+  transition : alll 0.2s ease-in-out;
+}
+/* ==============================
+ ANNOUNCEMENT SETTINGS
+============================== */
+#about-welcome {
+  height :  100vh;
+}
+#about-welcome aside {
+  height : 600px;
+  margin : auto 0px;
+}
+
+#about-welcome aside .flexy-col {
+  height : 100%;
+  width : 100%;
+}
+/* ==============================
+ STAFF SETTINGS
+============================== */
+
+.staff {
+  display :flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+/* ==============================
+ CODE SETTINGS
+============================== */
+
+#code-conduct  {
+  min-height : 100vh;
+  padding-top : 3%;
+  display : flex;
+  justify-content: center;
+  align-items: center;
+}
+#code-conduct h3 {
+  text-align :center;
+  margin : 30px 0px !important;
+}
+#code-conduct  article {
+  height  :380px;
+  justify-content: space-between;
+  display : flex;
+  flex-direction: column;
+}
+#code-conduct h4 {
+  margin : 25px 0px  !important;
+  padding-left : 2%;
+}
+#code-conduct ul li {
+  display : flex;
+}
+/* ==============================
+ STAFF SETTINGS
+============================== */
+#sport-activity {
+  min-height: 100vh;
+  display:  flex;
+  justify-content: center;
+  align-items: center;
+}
+#sport-activity h3 {
+  text-align: center !important;
+}
+#sport-activity .center-col {
+  height: 380px;
+  justify-content: space-between;
+}
+#sport-activity h5 {
+  margin: 20px 0px !important;
+  font-size: 32px !important;
+}
+/* ==============================
+ STAFF SETTINGS
+============================== */
+#admission-porcess {
+  min-height : 100vh; 
+}
+#admission-porcess h3 {
+  margin : 25px 0px !important;
+}
+#admission-porcess aside {
+  height : 380px;
+}
+#admission-porcess aside div {
+  height : 320px;
+}
+#admission-porcess aside ul {
+  height : 300px;
+  list-style :circle;
+  align-items: flex-start;
+}
+#admission-porcess  li {
+  margin : 8px;
+  text-align: left;
+}
+/* ==============================
+ ADMIN FEES SETTINGS
+============================== */
+#adminfees {
+  min-height: 60vh;
+}
+#adminfees article {
+  height: 46vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+#adminfees article ul {
+  list-style: disc;
+  font-size : 26px;
+  font-style: oblique;
+}
+#adminfees article h2,
+#adminfees article h4 {
+  text-align: center !important;
+}
+/* ==============================
+ UNIFORM SETTINGS
+============================== */
+#uniform {
+  min-height: 100vh;
+  text-align: center !important;
+}
+#uniform h4 {
+  margin : 30px 0px !important;
+} 
+#uniform .both {
+  box-shadow: 5px 5px 17px 7px rgba(0, 0, 0, 0.73);
+  padding: 2% 0px;
+}
+#uniform .left {
+  align-items : flex-start;
+}
+#uniform .right {
+  align-items : flex-end ;
+}
+/* ==============================
+ PORTFOLIO SETTINGS
+============================== */
+#portfolio h1 {
+  text-shadow: 3px 3px 3px rgb(0, 0, 0);
+  color: goldenrod;
+  font-size: 72px;
+  margin : 30px auto;
+  font-family: 'Playfair Display', sans-serif;
+}
+/* ==============================
+ ADRESS & FORM SETTINGS
+============================== */
+#adress-form {
+  min-height : 100vh;
+  padding-top : 2%;
+}
+#adress-form aside {
+  justify-content: space-around;
+  height : 400px;
+  align-items: flex-start;
+}
+#adress-form aside .flexy-cen {
+  align-items: flex-start !important;
+}
+#adress-form article {
+  justify-content: center;
+  align-items: center;
+  min-height : 600px;
+}
+#adress-form h2 {
+  text-align: center ;
+  margin : 15px 0px 0px 0px;
+  font-size : 3rem;
+  font-family : 'Oswald';
+}
+#adress-form form,
+#adress-form form .flexy-col,
+#adress-form form label, 
+#adress-form form textarea, 
+#adress-form form input {
+  width : 100%;
+}
+#adress-form form button {
+  margin-top : 15px;
+}
+#adress-form aside .flexy-cen {
+ justify-content: space-around;
+ align-items: flex-start;
+}
+#adress-form aside .center-col {
+ align-items: flex-start;
+ text-align: left;
+ margin: 0px 20px;
+}
+/* ==============================
+ CONTACT MISSSION SETTINGS
+============================== */
+#contact-mission {
+  display : flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+#contact-mission aside {
+  margin: 10px 0px;
+}
+#contact-mission .btns {
+  justify-content: space-evenly;
+}
+#contact-mission .col {
+  align-items: flex-end !important;
+  display: flex;
+  flex-direction: column;
+  padding-right: 3%;
+}
+/* ==============================
+ CONTACT ICONS  SETTINGS
+============================== */
+#contact-icons {
+  min-height : 60vh;
+  padding-top: 3%;
+}
+#contact-icons article { 
+  height : 50vh;
+  align-items: center;
+  justify-content: center;
+}
+#contact-icons article aside {
+  width: 98%;
+  height: 98%;
+  margin: auto;
+  border-radius: 30px;
+  margin-bottom: 15px;
+  box-shadow: 0px 6px 11px 2px rgba(0, 0, 0, 0.678);
+}
+#contact-icons article p {
+  font-size: 26px;
+  text-align: center;
+  font-weight: 300;
+}
+/* ==============================
+ HERO SETTINGS
+============================== */
+#hero-comp h2 {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 700;
+  font-style: oblique;
+  color: white;
+  text-shadow: 4px 2px 5px black, 6px 2px 3px goldenrod;
+}
+#hero-comp p {
+  text-align: center;
+  font-size: 32px;
+  color : white;
+  color: gold;
+  text-shadow: 4px 2px 5px black, 6px 2px 3px rgb(204, 182, 15);
+}
+#hero-comp button {
+  width : 180px;
+  height : 50px;
+  margin : 10px auto;
+ 
+}
+/* ==============================
+ UNIFORM SETTINGS
+============================== */
+#map .flexy-cen {
+  width : 100%;
+  height : 100%;
+}
+
+#map iframe, 
+#map aside {
+  width : 80%;
+  height : 80%;
+  border: 10px solid goldenrod;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#opening-hours .left {
+  font-weight : 700;
+  background-color: #f2e702db;
+  color: white;
+  font-weight: 900;
+}
+#opening-hours .right {
+  color: #f2e702db;
+  background-color: #ffffffcf;
+  font-weight: 900;
+}
+/* ==============================
+ ANNOUNCEMENT SETTINGS
+============================== */
+footer {
+  padding : 1%;
+  margin-top : 10px;
+  background-color: goldenrod;
+}
+/* ==============================
+ IMAGES SETTINGS
+============================== */
+#home-carousel img {
+  width: 100%;
+}
+#why-choose  .why-choose ul img {
+  width : 30px;
+  height : 30px;
+  border-radius : 50%;
+}
+#code-conduct ul img {
+  width : 40px;
+  margin-right : 8px;
+}
+#sport-activity img {
+  height: 320px;
+}
+#contact-mission img {
+  width: 100%;
+}
+#contact-icons img {
+  height : 128px;
+  width : 128px;
+}
+#contact-mission .col img {
+  max-width : 365px;
+}
+#adress-form aside .flexy-cen img {
+  width : 108px;
+  height : 108px;
+}
+
+
+
+
+#funct-modal .close span:hover {
+  color : goldenrod;
+  text-shadow: 1px 2px 3px white;
+  transform: scale(1.5);
+}
