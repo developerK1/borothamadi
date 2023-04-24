@@ -124,6 +124,9 @@
         height: 30px !important;
         width: 30px !important;
     }
+    #home-carousel .carousel-indicators {
+        transform: translateX(0px);
+    }
     #funct-modal article {
         width : 98%;
     }

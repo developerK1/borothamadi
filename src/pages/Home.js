@@ -95,7 +95,7 @@ const Home = () => {
                   <figure className="circle">
                     <span className="material-symbols-outlined"> gate </span>
                     <h4>Admissions</h4>
-                    <Link to="/admission"><button>Veiw</button></Link>
+                    <Link to="/admissions"><button>Veiw</button></Link>
                   </figure>
                 </Col>
                 <Col lg={4} md={4}>

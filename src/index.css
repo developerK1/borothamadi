@@ -236,7 +236,7 @@ h4 {
   font-weight: 700;
 }
 #home-carousel .carousel-indicators {
-  transform: translateY(-100px);
+  transform: translateY(-50px);
   width: 200px;
   margin: 10px auto;
 }
@@ -288,7 +288,7 @@ h4 {
   margin-bottom: 30px;
 }
 #why-choose  .why-choose {
-  height: 500px;
+  min-height: 500px;
   display: flex;
   flex-direction: column;
   align-items : flex-start;
