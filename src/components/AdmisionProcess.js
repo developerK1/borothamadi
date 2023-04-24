@@ -4,7 +4,7 @@ import Col from 'react-bootstrap/Col';
 const AdmisionProcess = () => {
     return (<>
         <h3>Admissions Process</h3>
-            <Col lg={6} md={6}>
+            <Col lg={6} md={6} sm={12} className='article'>
                 <aside className="flexy-cen">
                     <img src="assets/admission/clipboard.png" alt="form" />
                     <div className="flexy-col">
@@ -19,7 +19,7 @@ const AdmisionProcess = () => {
                     </div>
                 </aside>
             </Col>
-        <Col lg={6} md={6}>
+        <Col lg={6} md={6} sm={12} className='article'>
             <aside className="flexy-cen">
                 <img src="assets/admission/form.jpg" alt="form" />
                 <div className="flexy-col">

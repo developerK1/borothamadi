@@ -15,7 +15,45 @@
   justify-content : center;
   align-items :center;
 }
-
+#hamburger {
+  width : 75px;
+  height : 60px;
+  border : black 3px solid;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor : pointer;
+  margin : 0px 5px;
+  z-index: 300;
+}
+#hamburger .lines {
+  width: 58px;
+  height: 12px;
+  margin: 2px;
+  background-color: black;
+}
+.show {
+  display: flex !important;
+  color: white;
+  position: fixed;
+  right: 0px;
+  top: -8px;
+  z-index: 200;
+  height: 100vh;
+  text-align: center;
+  font-size: 30px;
+  background-color: goldenrod;
+}
+#hamburger  h3 {
+  font-style: normal;
+  color: red;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.show a {
+  color: white;
+}
 .flexy-cen,
 .flexy-col {
   display :flex;
@@ -476,7 +514,7 @@ h4 {
   margin : 25px 0px !important;
 }
 #admission-porcess aside {
-  height : 380px;
+  min-height : 380px;
 }
 #admission-porcess aside div {
   height : 320px;
@@ -728,8 +766,12 @@ footer {
 }
 
 
-
-
+/* ==============================
+ Hover SETTINGS
+============================== */
+#hamburger  h3:hover {
+ transform: scale(1.2);
+}
 #funct-modal .close span:hover {
   color : goldenrod;
   text-shadow: 1px 2px 3px white;

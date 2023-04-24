@@ -35,13 +35,18 @@
         max-width: 100%;
         text-align: center;
     }
+    
     header nav {
         flex-direction: column;
+        align-items: flex-end;
     }
     header nav ul {
-        min-width: 780px!important;
+        width: 780px!important;
         margin-top : 10px;
     }
+     header nav img {
+        margin: 5px auto;
+     }
     #why-choose div div {
         display :flex;
         justify-content: center;
@@ -71,5 +76,69 @@
     }
     #announcement {
         padding : 3%  0px;
+    }
+    #announcement h5 {
+        margin : 20px auto;
+    }
+}
+
+
+@media(max-width : 600px){
+    header nav {
+        flex-direction: row;
+        justify-content: space-between !important;
+    }
+    header nav ul {
+        display: none;
+        width : 100% !important;
+        flex-direction: column;
+    }
+    #hamburger {
+        display: flex;
+    }
+    nav img {
+        margin: 0px 5px!important;
+        z-index: 300;
+    }
+    #funct-modal article {
+        width : 500px;
+    }
+    
+}
+@media(max-width : 500px){
+    #funct-modal article {
+        width :380px;
+    }
+}
+
+@media(max-width : 400px){
+    #code-conduct  article {
+        height: 430px ;
+    }
+    .carousel-indicators {
+        min-width: 100% !important;
+        margin-left: 0px !important;
+    }
+    .carousel-indicators button {
+        margin: 0px !important;
+        height: 30px !important;
+        width: 30px !important;
+    }
+    #funct-modal article {
+        width : 98%;
+    }
+    #funct-modal article h3 {
+        text-align: center !important;
+        width: 100%;
+    }
+    #admission-porcess aside {
+        flex-direction: column;
+    }
+    #contact-icons article p {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    #contact-mission p {
+        font-size: 20px;
     }
 }

@@ -32,6 +32,7 @@ const Funtionality = ({ popstateFunc , currState }) => {
         position : "fixed",
         top : 0,
         left : 0,
+        zIndex : 2000
     }} id="funct-modal">
         <article className='center-col'>
             <aside className='center-cen close'>
