@@ -103,6 +103,10 @@
     #funct-modal article {
         width : 500px;
     }
+    #uniform .both div {
+        align-items: center;
+        justify-content: center;
+    }
     
 }
 @media(max-width : 500px){
@@ -143,5 +147,8 @@
     }
     #contact-mission p {
         font-size: 20px;
+    }
+    #hero-comp h2 {
+        font-size: 3rem;
     }
 }
