@@ -1,9 +1,7 @@
 import {Link} from 'react-router-dom';
-import { useState } from 'react';
 
-const NavBar = () => {
 
-  const [toggleNav, setToggleNav] = useState(false);
+const NavBar = ({toggleNav , setToggleNav}) => {
 
   return (
     <header >
@@ -21,7 +19,7 @@ const NavBar = () => {
             <div id="hamburger" >
               {toggleNav ? (
                <h3 onClick={()=>setToggleNav(false)}>X</h3>
-              ) :(<aside onClick={()=>setToggleNav(true)}>
+              ) :(<aside onClick={()=> setToggleNav(true)}>
                 <div className="lines"></div>
                 <div className="lines"></div>
                 <div className="lines"></div>

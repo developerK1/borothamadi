@@ -87,8 +87,8 @@ const Home = () => {
                 <Col lg={4} md={4}>
                   <figure className="circle">
                     <span className="material-symbols-outlined">school</span>
-                    <h4>Academical</h4>
-                    <Link to="/academics"><button>Veiw</button></Link>
+                    <h4>Learners</h4>
+                    <Link to="/learners"><button>Veiw</button></Link>
                   </figure>
                 </Col>
                 <Col lg={4} md={4}>

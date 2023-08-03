@@ -11,7 +11,8 @@ const OpeningHours = () => {
                     <article className="col-lg-6 col-md-6 left" style={articles} >
                         <h2 style={{
                             fontSize : "42px",
-                            fontStyle : "italic"
+                            fontStyle : "italic",
+                            textShadow : "2px 1px 3px black",
                         }}>GRADE 1 to 7</h2>
                         <div className="center-col">
                         <h4 style={{
@@ -19,9 +20,9 @@ const OpeningHours = () => {
                         }}>MONDAY - THURSDAY</h4>
                             <p style={{
                                 fontSize : "26px",
-                                
+                                textShadow : "2px 1px 3px black",
                                 margin : "15px 0px",
-                            }}>07:00 - 14:30</p>
+                            }}>07:30 - 14:30</p>
                         </div>
                         <div className="center-col">
                             <h4 style={{
@@ -29,25 +30,26 @@ const OpeningHours = () => {
                             }}>FRIDAY</h4>
                             <p style={{
                                 fontSize : "26px",
-                                
+                                textShadow : "2px 1px 3px black",
                                 margin : "15px 0px",
-                            }}>07:00 - 13:00</p>
+                            }}>07:30 - 13:30</p>
                         </div>
                     </article>
                     <article className="col-lg-6 col-md-6 right" style={articles}>
                         <h2 style={{
                             fontSize : "42px",
-                            fontStyle : "italic"
-                        }}>GRADE R</h2>
+                            fontStyle : "italic",
+                            textShadow : "2px 1px 3px black"
+                        }}>FOUNDATION PHASE</h2>
                         <div className="center-col">
                             <h4 style={{
                                 fontSize : "34px",
                             }}>MONDAY - THURSDAY</h4>
                             <p style={{
                                 fontSize : "26px",
-                                
+                                textShadow : "2px 1px 3px black",
                                 margin : "15px 0px",
-                            }}>07:00 - 12:30</p>
+                            }}>07:30 - 13:00</p>
                         </div>
                         <div className="center-col">
                             <h4 style={{
@@ -55,9 +57,9 @@ const OpeningHours = () => {
                             }}>FRIDAY</h4>
                             <p style={{
                                 fontSize : "26px",
-                                
+                                textShadow : "2px 1px 3px black",
                                 margin : "15px 0px",
-                            }}>07:00 - 12:00</p>
+                            }}>07:30 - 12:30</p>
                         </div>
                     </article>
                 </Row>

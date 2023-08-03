@@ -5,11 +5,6 @@ import './responsive.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-// // BOOTSTRAP 
-// import "../node_modules/react-bootstrap/dist/react-bootstrap";
-// import '../node_modules/bootz strap/dist/css/bootstrap.min.css';
-// import '../node_modules/bootz strap/dist/js/bootstrap.min.js';
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

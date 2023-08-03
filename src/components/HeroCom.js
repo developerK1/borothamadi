@@ -32,7 +32,11 @@ const HeroCom = ({ childItem , heroBtnHandle }) => {
             <h2>{childItem.heading}</h2>
             <p>{childItem.tag}</p>
             {/* <CostumBtn text={childItem.btnText} clickHandler={heroBtnHandle}/> */}
-            <button onClick={handleFunc}>{childItem.btnText}</button>
+            <button onClick={handleFunc} style={{
+              backgroundColor : "#ffb90a",
+              color : "white",
+              fontSize : "19px"
+            }}>{childItem.btnText}</button>
         </article>
         {popup ? <PopUpFun popstateFunc={setPopup} currState={popup}/> : ""}
       </section>

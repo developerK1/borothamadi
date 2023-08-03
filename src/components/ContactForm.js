@@ -24,9 +24,11 @@ const ContactForm = ({handler}) => {
           </div>
           <div className="flexy-col">
             <button style={{
-              pointerEVent : "none",
-              opacity : "0.4",
-              cursor : "cell !important"
+              backgroundColor : "black",
+              color : "white",
+              fontWeight : 700,
+              height : "50px",
+              width : "150px"
             }}>Send</button>
           </div>
       </form>

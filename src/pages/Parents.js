@@ -9,7 +9,7 @@ import OpeningHours from '../components/OpeningHours';
 import AdressForm from '../components/AdressForm';
 import BoxedGallery from '../components/BoxedGallery';
 import CodeOfConduct from '../components/CodeOfConduct';
-import AdminFees from '../components/AdminFees';
+import AdminFees from '../components/FreeAdmin';
 
 const Parents = () => {
 
@@ -30,6 +30,8 @@ const Parents = () => {
     imgSrc : "assets/carousels/classroom.png",
     clickerHandler : "email us",
   }
+
+ 
 
   return (
     <>

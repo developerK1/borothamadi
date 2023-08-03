@@ -76,10 +76,13 @@ const Admission = () => {
             <Row>
                 <AdmisionProcess />
                 {/* <CostumBtn text="Download Form"/> */}
-                <button onClick={()=>setPopup(true)} style={{
-                  width : "150px",
-                  height : "40px",
+                <button onClick={()=>setPopup(true)} className='dow-btn' style={{
+                  width : "190px",
+                  height : "54px",
                   margin : "10px auto",
+                  backgroundColor : "black",
+                  color : "white",
+                  fontWeight : "700"
                 }}>Download Form</button>
             </Row>
           </div>

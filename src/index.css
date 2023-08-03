@@ -1,5 +1,5 @@
 
- @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@600&family=Oswald:wght@500&family=Playfair+Display:ital,wght@1,500&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@600&family=Oswald:wght@500&family=Playfair+Display:ital,wght@1,500&family=Roboto+Slab&display=swap');
 
 *{
   margin : 0px;
@@ -64,9 +64,12 @@
 .flexy-col {
   flex-direction :column;
 }
+.navbar-open {
+  display: none;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oswald', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -208,6 +211,13 @@ h4 {
   font-size: 32px;
   transition : all 0.4s ease-in-out;
 }
+nav ul a {
+  text-decoration: none !important;
+  color: black;
+  font-weight: 600;
+  font-size: 19px;
+  transition: all 0.6s ease-in-out;
+}
 /* ==============================
  CROUSELS SETTINGS
 ============================== */
@@ -229,11 +239,14 @@ h4 {
   border-radius : 35px;
 }
 #home-carousel h2 {
-  font-size : 4.5rem;
-  text-align :center;
-  color : white;
-  font-family: 'Roboto Slab', serif;
+  font-size: 4.5rem;
+  text-align: center;
+  color: white;
+  font-family: 'Oswald Slab', serif;
   font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: #ffd70085;
+  text-decoration-thickness: 16px;
 }
 #home-carousel .carousel-indicators {
   transform: translateY(-50px);
@@ -261,31 +274,50 @@ h4 {
   font-weight: 700;
   background-color: rgba(0, 0, 0, 0.673);
 }
-#home-carousel button ,
-#about-carousel aside button {
-  width : 150px;
+#home-carousel button, #about-carousel aside button {
+  width: 150px;
   height: 50px;
-  margin : 10px auto; 
+  margin: 10px auto;
+  background-color: goldenrod;
+  border-radius: 7px;
+  outline: none;
+  box-shadow: 1px 2px 3px black;
+  border: solid 2px white;
+  color: white;
+  font-weight: 600;
+  font-size: 17px;
+  text-shadow: 1px 2px 3px black;
 }
 #about-carousel aside h2 {
   font-size: 3.5rem;
   font-family: 'Playfair Display', sans-serif;
 }
 .carousel-indicators button {
-  height: 50px !important;
-  width :50px !important;
+  height: 30px !important;
+  width :30px !important;
   border-radius: 50% !important;
   margin : 10px !important;
   background-color: rgb(0, 0, 0) !important;
   border : 1px solid red !important;
+  display :none !important;
 }
 /* ==============================
  ABOUT WELCOME SETTINGS
 ============================== */
 #why-choose {
-  min-height : 76vh;
-  width : 100%;
+  min-height: 76vh;
+  width: 100%;
   margin-bottom: 30px;
+  margin-top: 30px;
+  padding-top: 3%;
+  background-color: #e3e3e387;
+  padding-bottom: 3%;
+}
+#why-choose h2 {
+  font-size: 5rem;
+  margin-bottom: -20px;
+  text-shadow: 2px 6px 3px #000000c7, -5px -3px 3px black;
+  color: goldenrod;
 }
 #why-choose  .why-choose {
   min-height: 590px;
@@ -300,9 +332,24 @@ h4 {
   font-size : 23px;
   list-style : none;
   align-items: flex-start;
+  font-family: "Oswald", serif;
+  font-weight: 500;
 }
 
-
+#why-choose button {
+  background-color: black;
+  color: yellow;
+  font-weight: 600;
+  width: 150px;
+  height: 48px;
+  font-size: 18px;
+}
+#why-choose .col span {
+  color: orange;
+  font-weight: 800;
+  font-size: 24px;
+  text-shadow: 3px 3px 3px black;
+}
 /* ==============================
  IMAGES SETTINGS
 ============================== */
@@ -472,7 +519,6 @@ h4 {
   margin : 30px 0px !important;
 }
 #code-conduct  article {
-  height  :380px;
   justify-content: space-between;
   display : flex;
   flex-direction: column;
@@ -483,6 +529,29 @@ h4 {
 }
 #code-conduct ul li {
   display : flex;
+}
+#code-conduct p {
+  font-style: italic;
+  font-family: "Oswald", serif;
+}
+#code-conduct  aside {
+  min-height: 266px;
+  background-color: gold;
+  justify-content: space-around;
+  text-align: center;
+  text-shadow: 1px 0px 1px black;
+  box-shadow: 1px 2px 3px black;
+  margin: 20px 0px;
+}
+#code-conduct  aside P {
+  font-size: 22px;
+}
+#code-conduct  aside h2 {
+  font-size: 38px;
+  font-family: 'Assistant';
+  text-decoration: underline;
+  text-decoration-thickness: 9px;
+  text-decoration-color: #333333;
 }
 /* ==============================
  STAFF SETTINGS
@@ -586,6 +655,7 @@ h4 {
 #adress-form {
   min-height : 100vh;
   padding-top : 2%;
+  background-color: #d5d5d559;
 }
 #adress-form aside {
   justify-content: space-around;
@@ -612,6 +682,21 @@ h4 {
 #adress-form form textarea, 
 #adress-form form input {
   width : 100%;
+}
+#adress-form form .flexy-col {
+  height: 14vh;
+  font-size: 23px;
+  font-weight: 700;
+  color: gold;
+  width: 100%;
+  align-items: flex-start;
+}
+#adress-form form label {
+  font-size: 26px;
+  font-weight: 700;
+}
+#adress-form form input {
+  height: 8vh;
 }
 #adress-form form button {
   margin-top : 15px;
@@ -646,6 +731,18 @@ h4 {
   flex-direction: column;
   padding-right: 3%;
 }
+#contact-mission a:nth-child(1) button {
+  background-color: black;
+  color: yellow;
+  font-weight: 600;
+  font-size: 18px;
+}
+#contact-mission a:nth-child(2) button {
+  background-color: gold;
+  color: black;
+  font-weight: 800;
+  font-size: 19px;
+}
 /* ==============================
  CONTACT ICONS  SETTINGS
 ============================== */
@@ -667,7 +764,7 @@ h4 {
   box-shadow: 0px 6px 11px 2px rgba(0, 0, 0, 0.678);
 }
 #contact-icons article p {
-  font-size: 26px;
+  font-size: 22px;
   text-align: center;
   font-weight: 300;
 }
@@ -733,6 +830,23 @@ footer {
   background-color: goldenrod;
 }
 /* ==============================
+ acd-adm-abo SETTINGS
+============================== */
+#acd-adm-abo {
+  padding : 1%;
+}
+#acd-adm-abo h4 {
+  font-family: monospace, "Oswald", serif;
+  font-weight: 700;
+}
+#acd-adm-abo button {
+  background-color: gold;
+  color: black;
+  font-weight: 800;
+  height: 44px;
+  font-size: 19px;
+}
+/* ==============================
  IMAGES SETTINGS
 ============================== */
 #home-carousel img {
@@ -776,4 +890,40 @@ footer {
   color : goldenrod;
   text-shadow: 1px 2px 3px white;
   transform: scale(1.5);
+}
+#home-carousel button:hover,
+ #about-carousel aside button:hover {
+  background-color: black;
+  border-radius: 0px;
+  box-shadow: none  ;
+  border: solid 2px white;
+  font-weight: 800;
+  letter-spacing: 1.3px;
+  color : goldenrod;
+}
+#why-choose button:hover ,
+#contact-mission a:nth-child(1) button:hover,
+.dow-btn:hover {
+  background-color:goldenrod;
+  color:black;
+  font-weight: 700;
+ letter-spacing: 1.3px;
+}
+#acd-adm-abo button:hover ,
+#contact-mission a:nth-child(2) button:hover ,
+#hero-comp button:hover {
+  background-color: black;
+  color: white;
+  font-weight: 900;
+  letter-spacing: 1.3px;
+}
+nav ul a:hover {
+  color: rgb(244, 244, 244);
+  font-weight: 900;
+}
+#adress-form form button:hover {
+  background-color: goldenrod!important;
+  color : rgb(0, 0, 0) !important;
+  letter-spacing: 1.3px;
+  font-weight: 900;
 }

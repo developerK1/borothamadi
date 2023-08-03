@@ -2,16 +2,15 @@ import { v4 as uuidv4 } from 'uuid';
 
 export const schoolInfo = {
     name : "Borothamadi Primary School",
-    motto : " adipisci velit...,Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
-    mission : "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...,Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
-    vision :"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...,Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+    motto : "Thuto Lore",
+    mission : "To revive culture of teaching and learning to ICT world and outcome-based education. To have development initiatives to pupils to become global citizens. To create more safe learning institution which promote lifelong learning. To produce well rounded scholars strive for academic excellence.",
+    // mission : "To establish and maintain an educational programme to enrich the capabilities of socially, economically and or politically disadvantaged children within the primary phase of schooling.And develop language and perceptual skills of such children while nurturing initiative and self-confidence. To assist pupils in to obtain entry into school on successful completion of their curricula.",
+    vision :"Provide career-orientated quality education and excellence.Our objective  is to meet the needs of parents and children in the most effective way possible, which means that the teachers make a unique contribution, using initiative and individuality to maintain a caring and effective teaching environment.",
     longText : "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
-    values : "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
-    history : ["Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...","Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."],
-    CodeLearners : ["Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...","Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."],
-    CodeTeacher : ["Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...","Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."],
+    values : "Borothamadi Primary School is proud to be the having Positive Behavioural Interventions and Supports, and is a behaviour modification program which uses positive reinforcement rather than punitive measures to encourage good behaviour.",
+    history : ["Borothamadi Primary School is a school initiated in 1987 in Borothamadi, Dinokana Village response to the growing crisis in education and the inability of parents to obtain adequate education for their children.",""],
     contacts : {
-        phone : "012 121 1112",
+        phone : "073 177 2940",
         adress : {
         province : "North West",
         town : "Zeerust",
@@ -19,7 +18,7 @@ export const schoolInfo = {
         postalCode : 2868, 
         village :  "Borothamadi"
       },
-      email : "info@Borothamdischool.co.za",
+      email : "Borothamdischoolps@gmail.co.za",
       stringedLocation : "Dinokana , Borothamadi , 2868"
     },
     packs : {
@@ -80,18 +79,8 @@ export const uniforms = {
 }
 
 export const CodeOfConduct = {
-  learner : [
-      "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur", 
-      "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur", 
-      "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur", 
-      "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur", 
-  ],
-  teacher : [
-    "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur", 
-    "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur", 
-    "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur", 
-    "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur", 
-  ]
+  learner : ["a) Be punctual.","b) Manage learner performance effectively and motivate learners to achieve realistic and meaningful personal goals.", "c) Always show respect and be professional towards colleagues.","d) Administer discipline correctly and with dignity.","e) Be sensitive to the needs of their learners and address learning difficulties in a positive manner.","f) Praise, encourage, recognise and reward learners who strive to achieve.","g) Create a classroom climate which is based on a learning partnership that makes education both relevant and stimulating. h) Set a positive example for their learners to follow.","i) Be aware of camera surveillance in the classrooms, corridors and play area and action can be taken according to visual and verbal evidence."],
+  teacher : ["a) Educators must execute their duties with diligence, honesty and care at all times.","b) The interest and well fare of learners shall always come first, however, personal and professional development of educators as well as participation in professional bodies is appreciated with reasonability","c) Discipline in the classroom should be done in accordance with the learner’s code of conduct of the school. The learner’s records of behavior must be kept by every class educator.","d) All educators must contribute to the improvement of the school environment, talent development/ nurturing and general skills development of every learner of our school.","e) Class teachers must establish general classroom rules with their learners at the beginning of every academic year and ensure that such are known by every learner by heart.","f) Classroom rules must reflect the general school rules as well as the school code of conduct for the learners.","g )Manage the learning process and the learning environment enthusiastically and professionally.","h) Every educator must belong to a committee within the school."],
 }
 
 export const HeroImages = {
