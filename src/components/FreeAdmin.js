@@ -24,7 +24,8 @@ const AppDetails = useContext( AdmissionDetails );
             <Col lg={6} md={6}>
               <article>
                 <h4>DONATE FOR US</h4>
-                <p>SCHOOL ACCOUNT NUMBER CAN BE REQUESTED ON REQUEST</p>
+                <h6>SCHOOL ACCOUNT NUMBER CAN BE REQUESTED ON REQUEST</h6>
+                <p>Borothamadi Primary School that is declared a public, fee paying school in terms of SASA and advocates English as its main medium of instruction with a Christian Based Ethos. </p>
               </article>
             </Col>
             <h2>YOUR DONATIONS WILL SAVE HIS/HER FUTURE</h2>

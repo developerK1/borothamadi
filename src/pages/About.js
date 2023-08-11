@@ -22,27 +22,19 @@ const About = () => {
   
   const AppInfo = useContext(businessDetails);
   const [teachers, setTeachers] = useState([
-    {id :uuidv4(), name :"Mr Riss", occupation : "The Principal "  , img:"assets/staff/male.jpg"},
-    {id :uuidv4(), name :"Mr Plaatjie", occupation : "A Teacher"  , img:"assets/staff/male.jpg"},
-    {id :uuidv4(), name :"Mrs Goerge", occupation : "A Teacher"  , img:"assets/staff/female.png"},
-    {id :uuidv4(), name :"Mr Plaatjie", occupation : "A Teacher"  , img:"assets/staff/male.jpg"},
-    {id :uuidv4(), name :"Mrs Goerge", occupation : "A Teacher"  , img:"assets/staff/female.png"},
-    {id :uuidv4(), name :"Mr Plaatjie", occupation : "A Teacher"  , img:"assets/staff/male.jpg"},
-    {id :uuidv4(), name :"Mrs Goerge", occupation : "A Teacher"  , img:"assets/staff/female.png"},
-    {id :uuidv4(), name :"Mrs Goerge", occupation : "A Teacher"  , img:"assets/staff/female.png"},
-    {id :uuidv4(), name :"Mr Plaatjie", occupation : "A Teacher"  , img:"assets/staff/male.jpg"},
-    {id :uuidv4(), name :"Mrs Goerge", occupation : "A Teacher"  , img:"assets/staff/female.png"},
-    {id :uuidv4(), name :"Mr Plaatjie", occupation : "A Teacher"  , img:"assets/staff/male.jpg"},
-    {id :uuidv4(), name :"Mrs Goerge", occupation : "A Teacher " , img:"assets/staff/female.png"}
+    {id :uuidv4(), name :"Mr Moremedi", occupation : "The Principal"  , img:"assets/staff/moremedi.jpg", subject : ["Natural Science"],grade : "4-7"},
+    {id :uuidv4(), name :"Mr Thembe", occupation : "A Teacher"  , img:"assets/staff/thembe.png",subject : ["Foundation Phase"],grade : "R - 1"},
+    {id :uuidv4(), name :"Mrs Lerakong", occupation : "A Teacher"  , img:"assets/staff/female.png",subject : ["Mathematics", "Languages"],grade : "4-7"},
+    {id :uuidv4(), name :"Mrs Motshwane", occupation : "A Teacher"  , img:"assets/staff/female.png",subject : ["Economics", "Life Skills"],grade : "4-7"},
+    {id :uuidv4(), name :"Mr Sebogodi", occupation : "A Teacher"  , img:"assets/staff/male.jpg",subject : ["Social Sciencs"],grade : "4-7"},
+    {id :uuidv4(), name :"Mr Segakweng", occupation : "Administration"  , img:"assets/staff/female.png",subject : ["Social Sciencs"],grade : "4-7"}
   ])
   
   const [SGBs, setSGBs] = useState([
-    {id :uuidv4(), name :"Mr R", occupation : "Chairperson "  , img:"assets/staff/male.jpg"},
-    {id :uuidv4(), name :"Mr P", occupation : "Secretary"  , img:"assets/staff/male.jpg"},
-    {id :uuidv4(), name :"Mrs G", occupation : "Treasurer"  , img:"assets/staff/female.png"},
-    {id :uuidv4(), name :"Mr K", occupation : "Memeber"  , img:"assets/staff/male.jpg"},
-    {id :uuidv4(), name :"Mrs M", occupation : "Memeber"  , img:"assets/staff/female.png"},
-    {id :uuidv4(), name :"Mr S", occupation : "Memeber"  , img:"assets/staff/male.jpg"}
+    {id :uuidv4(), name :"M Ditile", occupation : "Chairperson "  , img:"assets/staff/female.png"},
+    {id :uuidv4(), name :"K Serite P", occupation : "D Chairperson"  , img:"assets/staff/male.jpg"},
+    {id :uuidv4(), name :"M Makgetha", occupation : "Treasurer"  , img:"assets/staff/female.png"},
+    {id :uuidv4(), name :"N Kasonkola", occupation : "Secretary"  , img:"assets/staff/female.png"},
   ]);
 
   const viewerImgs = ["assets/uniform/grasshopper.jpg", "assets/uniform/buccaneer.jpg"];
@@ -72,7 +64,7 @@ const About = () => {
         <section className='container-fluid' id="staff">
           <div className='container'>
             <h3>STAFF MEMBERS</h3>
-            <Row>   
+            <Row className="center-cen">   
               {teachers.map(teacher =>(
                 <StaffComponent teacher={teacher} key={teacher.id}/>
               ))}
@@ -93,6 +85,12 @@ const About = () => {
                 {SGBs.map(SGBs =>(
                   <StaffComponent teacher={SGBs} key={SGBs.id}/>
                 ))}
+                <div className="col-lg-8 col-md-8 col-sm-12">
+                  <figure>
+                    <p>Any person who teaches, educates or trains learners at the school who has been appointed by the GDE or the SGB of the school. </p>
+                    <p>Person, usually an educator, appointed by the GDE to manage all educational and administrative functions of the school who is accountable to the GDE and SGB as determined by SASA and other legislation.  The professional management of the school lies with the principal. </p>
+                  </figure>
+                </div>
               </Row>
             </div>
           </section>

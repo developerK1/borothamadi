@@ -23,21 +23,6 @@ function App() {
   const [toggleNav, setToggleNav] = useState(false);
   const [urlName, setUrlName] = useState('/');
 
-  // function showURL(){
-  //   let urlpath = [...window.location.href];
-  //   const urlname = urlpath.slice(22,urlpath.length-1 ).join("").toUpperCase();
-
-
-  //   console.log(urlpath)
-  //   console.log(urlname)
-  // }
-
-useEffect(() => {
-  setUrlName(window.location.href);
-  console.log(urlName)
-}, [urlName])
-
-
   return (
     <Router>
       <AppInforProvider>

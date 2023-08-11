@@ -10,7 +10,7 @@ import AdressForm from '../components/AdressForm';
 import BoxedGallery from '../components/BoxedGallery';
 import AdmisionProcess from '../components/AdmisionProcess';
 import HeroCom from '../components/HeroCom';
-import AdminFees from '../components/AdminFees';
+import FreeAdmin from '../components/FreeAdmin';
 import PopUpFun from '../components/popup/Funtionality';
 
 //BOOTSTRAP
@@ -114,7 +114,7 @@ const Admission = () => {
           END OF NOTICE
           START OF FEES INFO
           ======================================= */}
-          <AdminFees />
+          <FreeAdmin />
           {/* =======================================
           START OF FEES
           START PROGRAMMS
