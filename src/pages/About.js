@@ -27,7 +27,7 @@ const About = () => {
     {id :uuidv4(), name :"Mrs Lerakong", occupation : "A Teacher"  , img:"assets/staff/female.png",subject : ["Mathematics", "Languages"],grade : "4-7"},
     {id :uuidv4(), name :"Mrs Motshwane", occupation : "A Teacher"  , img:"assets/staff/female.png",subject : ["Economics", "Life Skills"],grade : "4-7"},
     {id :uuidv4(), name :"Mr Sebogodi", occupation : "A Teacher"  , img:"assets/staff/male.jpg",subject : ["Social Sciencs"],grade : "4-7"},
-    {id :uuidv4(), name :"Mr Segakweng", occupation : "Administration"  , img:"assets/staff/female.png",subject : ["Social Sciencs"],grade : "4-7"}
+    {id :uuidv4(), name :"Mrs Segakweng", occupation : "Administration"  , img:"assets/staff/female.png",subject : ["Social Sciencs"],grade : "4-7"}
   ])
   
   const [SGBs, setSGBs] = useState([

@@ -97,7 +97,7 @@ const Admission = () => {
               {AppDates ? (<aside>
                 <h1>APPLICATIONS ARE</h1>
                 <h4>NOW OPEN</h4>
-                <p>FOR {nextYear()}</p>
+                <p>FOR <span className="next-year">{nextYear()}</span></p>
                 <p>AND CLOSE JANUARY {nextYear() + 1}</p>
               </aside>) :(
                 <aside>

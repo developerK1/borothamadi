@@ -44,9 +44,9 @@ const AppInfo = useContext( businessDetails );
           <span class="material-symbols-outlined">support</span>
             <Card.Body>
               <Card.Title style={cardTitle}>Our Values</Card.Title>
-              <Card.Text>
-                {AppInfo.values}
-              </Card.Text>
+              <ul>
+                  {AppInfo.visionList.map(list => <li key={list}>{list}</li>)}
+                </ul>
               {/* <Button variant="primary">Go somewhere</Button> */}
             </Card.Body>
           </Card>

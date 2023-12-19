@@ -29,19 +29,19 @@ const AppInfo = useContext( businessDetails );
           </Col>
           <Col lg={4} md={4}>
             <Card style={{card}}>
-            <span class="material-symbols-outlined">cast_for_education</span>
+            <span className="material-symbols-outlined">cast_for_education</span>
             <Card.Body>
               <Card.Title style={cardTitle}>Our Vision</Card.Title>
-              <Card.Text>
-               {AppInfo.vision}
-              </Card.Text>
+                <ul>
+                  {AppInfo.visionList.map(list => <li key={list}>{list}</li>)}
+                </ul>
               {/* <Button variant="primary">Go somewhere</Button> */}
             </Card.Body>
           </Card>
           </Col>
           <Col lg={4} md={4}>
           <Card style={card}>
-          <span class="material-symbols-outlined">support</span>
+          <span className="material-symbols-outlined">support</span>
             <Card.Body>
               <Card.Title style={cardTitle}>Our Values</Card.Title>
               <Card.Text>

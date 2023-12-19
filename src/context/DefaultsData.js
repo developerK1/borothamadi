@@ -8,6 +8,7 @@ export const schoolInfo = {
     vision :"Provide career-orientated quality education and excellence.Our objective  is to meet the needs of parents and children in the most effective way possible, which means that the teachers make a unique contribution, using initiative and individuality to maintain a caring and effective teaching environment.",
     longText : "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
     values : "Borothamadi Primary School is proud to be the having Positive Behavioural Interventions and Supports, and is a behaviour modification program which uses positive reinforcement rather than punitive measures to encourage good behaviour.",
+    visionList : ["Be Safe", "Be Respectful", "Be responsible", "be Helpful","Lifelong learning Institution"],
     history : ["Borothamadi Primary School is a school initiated in 1987 in Borothamadi, Dinokana Village response to the growing crisis in education and the inability of parents to obtain adequate education for their children.",""],
     contacts : {
         phone : "073 177 2940",

@@ -39,7 +39,7 @@ const Home = () => {
         <Container id="why-choose" className="center-cen">
         <Row>
             <Col lg={5} md={6}>
-              <img src="/assets/other/who.jpg" alt="borothamadi-primary" />
+              <img src="/assets/other/who.png" alt="borothamadi-primary" />
             </Col>
             <Col lg={6} md={6} className="why-choose">
               <h2>WHY US?</h2>
@@ -50,10 +50,10 @@ const Home = () => {
                 <li><span><img src="/assets/icons/arrow.png" alt="borothamadi-list"/></span> {AppInfo.packs.healthyMenu}</li>
               </ul>
               <Row>
-                <Col className="flexy-col">
+                <figure className="flexy-col">
                   <span> {getDate()}</span>
                   <Link to="admissions"><button>Admission</button></Link>        
-                </Col>
+                </figure>
               </Row>
             </Col>
         </Row>
@@ -131,7 +131,7 @@ const Home = () => {
                     </Col>
                     <Col lg={5} md={5} className="center-col left">
                       <h5>Principal Words</h5>
-                      <div className='flexy-col'>
+                      <div>
                         <p>{AppInfo.longText}</p>
                         <p>{AppInfo.longText}</p>
                         <p>{AppInfo.longText}</p>
@@ -142,7 +142,7 @@ const Home = () => {
                   <Row>
                     <Col lg={5} md={5} className="center-col right">
                       <h5>Upcomming Farewel</h5>
-                      <div className='flexy-col'>
+                      <div >
                         <p>{AppInfo.longText}</p>
                         <p>{AppInfo.longText}</p>
                         <p>{AppInfo.longText}</p>
