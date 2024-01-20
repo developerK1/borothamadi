@@ -24,27 +24,39 @@ const Admission = () => {
   const AppDetails = useContext( AdmissionDetails );
   const BusiDetails = useContext( businessDetails );
   const uniform = useContext(UniformDetails);
+  let currentMonth = new Date().getMonth();
 
   //STATES
   const [subjects, setSubjects] = useState(AppDetails.subjects);
   const [AppDates, setAppDates] = useState(false);
+
   const [heroContents, setheroContents] = useState({
       heading : `Welcome to ${BusiDetails.bankName}`,
       btnText : `Contact US`,
       tag :  `${BusiDetails.vision}`
   });
+
+  const [ourMonth, setOurMonth] = useState(null);
+
+
   const [popup, setPopup] = useState(false);
 
   const nextYear = () => (new Date().getFullYear() + 1);
 
+  const updateDate = () =>{
 
-  useEffect(() => {
-    let currentMonth = new Date().getMonth();
-
-    
-    if(currentMonth >= 7 ){
+    if(currentMonth >= 7){
       setheroContents({
         heading : "APPLICATIONS NOW OPEN",
+        btnText : "Download Form",
+        tag : "Contact us for enquirys",
+        imgSrc : "assets/carousels/classroom.png"
+      });
+
+      setAppDates(true)
+    }else if(currentMonth < 2 ){
+      setheroContents({
+        heading : "APPLICATIONS STILL OPEN",
         btnText : "Download Form",
         tag : "Contact us for enquirys",
         imgSrc : "assets/carousels/classroom.png"
@@ -61,8 +73,23 @@ const Admission = () => {
 
       setAppDates(false)
     }
+  }
 
-    
+  //======================================
+  const adjustDate = () =>{
+
+    if(currentMonth >= 7){
+      setOurMonth("august")
+    }else if(currentMonth < 2 ){
+      setOurMonth("february")
+    }else{
+      setOurMonth("closed")
+    }
+  }
+
+  useEffect(() => {
+    updateDate();
+    adjustDate();
   }, [])
 
   return (<> 
@@ -94,19 +121,27 @@ const Admission = () => {
           ======================================= */}
           <section id="anouncement">
             <article className="center-col">
-              {AppDates ? (<aside>
+
+              {ourMonth === "august" ? (<aside>
                 <h1>APPLICATIONS ARE</h1>
                 <h4>NOW OPEN</h4>
                 <p>FOR <span className="next-year">{nextYear()}</span></p>
                 <p>AND CLOSE JANUARY {nextYear() + 1}</p>
-              </aside>) :(
-                <aside>
-                  <h1>APPLICATION FOR {nextYear() - 1} CLOSED</h1>
-                  <h4>APPLICATIONS OPEN AUGUST</h4>
-                  <p>FOR {nextYear()}</p>
-                  <p>AND CLOSE JANUARY {nextYear() + 1}</p>
-                </aside>
-              ) }
+              </aside>) : ""}
+
+            {ourMonth === "february" ? (<aside>
+              <h1>APPLICATIONS ARE</h1>
+              <h4>STILL OPEN</h4>
+              <p>FOR <span className="next-year">{nextYear() - 1 }</span></p>
+              <p>AND CLOSE FEBRUARY <span className='high-year'>{nextYear() - 1}</span></p>
+            </aside>) : ""}
+
+            {ourMonth === "closed" ? (<aside>
+              <h1>APPLICATIONS ARE</h1>
+              <h4>NOW CLOSED</h4>
+              <p>FOR <span className="next-year">{nextYear() - 1 }</span></p>
+              <p>AND OPENS AUGUST <span className='high-year'>{nextYear() - 1}</span></p>
+            </aside>) : ""}
               
             </article>
           </section>

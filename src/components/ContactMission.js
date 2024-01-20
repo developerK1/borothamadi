@@ -20,7 +20,7 @@ const ContactMission = () => {
                         <Link to="/about"><button>About</button></Link>
                     </div>
                 </article>
-                <article className="col-lg-6 col-md-6">
+                <article className="col-lg-6 col-md-6 center-cen">
                     <div className="row">
                         <aside className='col-lg-6 col-md-6'>
                             <img src="assets/gallery/gallery8.jpg" alt="borothamadi-primary" />

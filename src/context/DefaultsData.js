@@ -19,7 +19,7 @@ export const schoolInfo = {
         postalCode : 2868, 
         village :  "Borothamadi"
       },
-      email : "Borothamdischoolps@gmail.co.za",
+      email : "Borothamadischoolps@gmail.co.za",
       stringedLocation : "Dinokana , Borothamadi , 2868"
     },
     packs : {

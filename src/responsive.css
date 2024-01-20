@@ -80,6 +80,11 @@
     #announcement h5 {
         margin : 20px auto;
     }
+    #map iframe, 
+    #map aside {
+        width : 100%;
+        height : 100vh;
+    }
 }
 
 
@@ -107,18 +112,27 @@
         align-items: center;
         justify-content: center;
     }
+    #sport-activity img {
+        height: 205px;
+        width: 100%;
+    }
     
 }
 @media(max-width : 500px){
     #funct-modal article {
         width :380px;
     }
+    /* #adress-form article aside div {
+        flex-direction: column !important;
+        text-align: center !important;
+        align-items: center !important;
+    } */
+    #adress-form aside .flexy-cen img {
+        width: 61px;
+    }
 }
 
 @media(max-width : 400px){
-    #code-conduct  article {
-        height: 430px ;
-    }
     .carousel-indicators {
         min-width: 100% !important;
         margin-left: 0px !important;
